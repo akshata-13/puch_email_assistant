@@ -15,5 +15,5 @@ dependencies = [
     "fastmcp[server]",
     "python-dotenv",
     "google-generativeai"
-]
+    ]
 
