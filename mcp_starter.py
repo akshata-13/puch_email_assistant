@@ -53,9 +53,9 @@ async def validate() -> str:
 
 # --- NEW TOOL: AI Email Assistant (Powered by Google Gemini) ---
 EmailAssistantDescription = RichToolDescription(
-    description="Analyzes an email draft for its tone and provides suggestions for improvement. It can also rewrite the entire email to match a new, desired tone.",
-    use_when="A user provides an email draft and asks to improve its tone, make it more professional, persuasive, friendly, etc.",
-    side_effects="Returns a formatted text response with analysis, suggestions, and a rewritten email.",
+    description="Analyzes and rewrites a user's email draft to match a specific target tone (e.g., Formal, Confident). Provides analysis, suggestions, and a full rewrite.",
+    use_when="Use this tool ONLY when a user pastes a block of text and explicitly asks to 'analyze', 'rewrite', 'fix', or 'change the tone' of an email. This tool is the primary choice for improving user-provided email drafts.",
+    side_effects="Returns a formatted text response directly to the user.",
 )
 
 @mcp.tool(description=EmailAssistantDescription.model_dump_json())
