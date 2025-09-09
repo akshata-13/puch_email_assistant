@@ -28,7 +28,7 @@ To run this server on your own computer for development and testing, follow thes
 
 1.  **Clone the Repository:**
     ```bash
-    git clone [https://github.com/akshata-13/puch-email-assistant.git](https://github.com/akshata-13/puch-email-assistant.git)
+    git clone https://github.com/akshata-13/puch-email-assistant.git
     cd puch-email-assistant
     ```
 
